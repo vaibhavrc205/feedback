@@ -1,111 +1,111 @@
 import * as React from "react";
 import { Field } from "@progress/kendo-react-form";
-import { countries, genders, rating, yesNo } from "./Data";
+import { countries, genders, rating, yesNo } from "../Helpers/Data";
 import {
   FormInput,
   FormUpload,
   FormRadioGroup,
   FormTextArea,
-} from "./FormComponents";
+} from "../Helpers/FormComponents";
 import {
   userNameValidator,
   emailValidator,
   passwordValidator,
   requiredValidator,
-} from "./Validators";
-export const DBMS = (
+} from "../Helpers/Validators";
+export const TIS = (
   <div>
     <Field
-      key={"dbmsQ1"}
-      id={"dbmsQ1"}
-      name={"dbmsQ1"}
+      key={"tisQ1"}
+      id={"tisQ1"}
+      name={"tisQ1"}
       label={
         "Has the Teacher covered entire Syllabus as prescribed by University?"
       }
       layout={"horizontal"}
       component={FormRadioGroup}
       data={yesNo}
-      // validator={redbmsQuiredValidator}
+      // validator={retisQuiredValidator}
     />
     <div style={{ fontWeight: "bold" }}>
       Effectiveness of Teacher in terms of:
     </div>
     <Field
-      key={"dbmsQ2"}
-      id={"dbmsQ2"}
-      name={"dbmsQ2"}
+      key={"tisQ2"}
+      id={"tisQ2"}
+      name={"tisQ2"}
       label={"Technical content"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={redbmsQuiredValidator}
+      // validator={retisQuiredValidator}
     />
     <Field
-      key={"dbmsQ3"}
-      id={"dbmsQ3"}
-      name={"dbmsQ3"}
+      key={"tisQ3"}
+      id={"tisQ3"}
+      name={"tisQ3"}
       label={"Communication skills"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={redbmsQuiredValidator}
+      // validator={retisQuiredValidator}
     />
     <Field
-      key={"dbmsQ4"}
-      id={"dbmsQ4"}
-      name={"dbmsQ4"}
+      key={"tisQ4"}
+      id={"tisQ4"}
+      name={"tisQ4"}
       label={
         "Availability beyond normal classes and co-operation to solve individual problems"
       }
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={redbmsQuiredValidator}
+      // validator={retisQuiredValidator}
     />
     <Field
-      key={"dbmsQ5"}
-      id={"dbmsQ5"}
-      name={"dbmsQ5"}
+      key={"tisQ5"}
+      id={"tisQ5"}
+      name={"tisQ5"}
       label={"Pace on which contents were covered"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={redbmsQuiredValidator}
+      // validator={retisQuiredValidator}
     />
     <Field
-      key={"dbmsQ6"}
-      id={"dbmsQ6"}
-      name={"dbmsQ6"}
+      key={"tisQ6"}
+      id={"tisQ6"}
+      name={"tisQ6"}
       label={"Overall effectiveness"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={redbmsQuiredValidator}
+      // validator={retisQuiredValidator}
     />
     <Field
-      key={"dbmsQ7"}
-      id={"dbmsQ7"}
-      name={"dbmsQ7"}
+      key={"tisQ7"}
+      id={"tisQ7"}
+      name={"tisQ7"}
       label={"How do you rate the contents of the curricular?"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={redbmsQuiredValidator}
+      // validator={retisQuiredValidator}
     />
     <Field
-      key={"dbmsQ8"}
-      id={"dbmsQ8"}
-      name={"dbmsQ8"}
+      key={"tisQ8"}
+      id={"tisQ8"}
+      name={"tisQ8"}
       label={"How do you rate lab experiments, if applicable?"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={redbmsQuiredValidator}
+      // validator={retisQuiredValidator}
     />
     <Field
-      key={"dbmsQ9"}
-      id={"dbmsQ9"}
-      name={"dbmsQ9"}
+      key={"tisQ9"}
+      id={"tisQ9"}
+      name={"tisQ9"}
       label={"Any remarks"}
       layout={"horizontal"}
       component={FormTextArea}

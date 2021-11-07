@@ -1,20 +1,27 @@
 import * as React from "react";
 import { Field } from "@progress/kendo-react-form";
-import { countries, genders, rating, yesNo } from "./Data";
-import { FormInput, FormUpload, FormRadioGroup, FormTextArea } from "./FormComponents";
+import { countries, genders, rating, yesNo } from "../Helpers/Data";
+import {
+  FormInput,
+  FormUpload,
+  FormRadioGroup,
+  FormTextArea,
+} from "../Helpers/FormComponents";
 import {
   userNameValidator,
   emailValidator,
   passwordValidator,
   requiredValidator,
-} from "./Validators";
+} from "../Helpers/Validators";
 export const CN = (
   <div>
     <Field
       key={"cnQ1"}
       id={"cnQ1"}
       name={"cnQ1"}
-      label={"Has the Teacher covered entire Syllabus as prescribed by University?"}
+      label={
+        "Has the Teacher covered entire Syllabus as prescribed by University?"
+      }
       layout={"horizontal"}
       component={FormRadioGroup}
       data={yesNo}
@@ -47,7 +54,9 @@ export const CN = (
       key={"cnQ4"}
       id={"cnQ4"}
       name={"cnQ4"}
-      label={"Availability beyond normal classes and co-operation to solve individual problems"}
+      label={
+        "Availability beyond normal classes and co-operation to solve individual problems"
+      }
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
@@ -103,7 +112,7 @@ export const CN = (
       data={rating}
       // validator={requiredValidator}
     />
-    
+
     {/* <Field
       key={"userName"}
       id={"userName"}

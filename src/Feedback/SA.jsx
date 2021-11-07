@@ -1,109 +1,118 @@
 import * as React from "react";
 import { Field } from "@progress/kendo-react-form";
-import { countries, genders, rating, yesNo } from "./Data";
-import { FormInput, FormUpload, FormRadioGroup, FormTextArea } from "./FormComponents";
+import { countries, genders, rating, yesNo } from "../Helpers/Data";
+import {
+  FormInput,
+  FormUpload,
+  FormRadioGroup,
+  FormTextArea,
+} from "../Helpers/FormComponents";
 import {
   userNameValidator,
   emailValidator,
   passwordValidator,
   requiredValidator,
-} from "./Validators";
-export const TIS = (
+} from "../Helpers/Validators";
+export const SA = (
   <div>
     <Field
-      key={"tisQ1"}
-      id={"tisQ1"}
-      name={"tisQ1"}
-      label={"Has the Teacher covered entire Syllabus as prescribed by University?"}
+      key={"saQ1"}
+      id={"saQ1"}
+      name={"saQ1"}
+      label={
+        "Has the Teacher covered entire Syllabus as prescribed by University?"
+      }
       layout={"horizontal"}
       component={FormRadioGroup}
       data={yesNo}
-      // validator={retisQuiredValidator}
+      // validator={resaQuiredValidator}
     />
     <div style={{ fontWeight: "bold" }}>
       Effectiveness of Teacher in terms of:
     </div>
     <Field
-      key={"tisQ2"}
-      id={"tisQ2"}
-      name={"tisQ2"}
+      key={"saQ2"}
+      id={"saQ2"}
+      name={"saQ2"}
       label={"Technical content"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retisQuiredValidator}
+      // validator={resaQuiredValidator}
     />
     <Field
-      key={"tisQ3"}
-      id={"tisQ3"}
-      name={"tisQ3"}
+      key={"saQ3"}
+      id={"saQ3"}
+      name={"saQ3"}
       label={"Communication skills"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retisQuiredValidator}
+      // validator={resaQuiredValidator}
     />
     <Field
-      key={"tisQ4"}
-      id={"tisQ4"}
-      name={"tisQ4"}
-      label={"Availability beyond normal classes and co-operation to solve individual problems"}
+      key={"saQ4"}
+      id={"saQ4"}
+      name={"saQ4"}
+      label={
+        "Availability beyond normal classes and co-operation to solve individual problems"
+      }
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retisQuiredValidator}
+      // validator={resaQuiredValidator}
     />
     <Field
-      key={"tisQ5"}
-      id={"tisQ5"}
-      name={"tisQ5"}
+      key={"saQ5"}
+      id={"saQ5"}
+      name={"saQ5"}
       label={"Pace on which contents were covered"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retisQuiredValidator}
+      // validator={resaQuiredValidator}
     />
     <Field
-      key={"tisQ6"}
-      id={"tisQ6"}
-      name={"tisQ6"}
+      key={"saQ6"}
+      id={"saQ6"}
+      name={"saQ6"}
       label={"Overall effectiveness"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retisQuiredValidator}
+      // validator={resaQuiredValidator}
     />
     <Field
-      key={"tisQ7"}
-      id={"tisQ7"}
-      name={"tisQ7"}
+      key={"saQ7"}
+      id={"saQ7"}
+      name={"saQ7"}
       label={"How do you rate the contents of the curricular?"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retisQuiredValidator}
+      // validator={resaQuiredValidator}
     />
     <Field
-      key={"tisQ8"}
-      id={"tisQ8"}
-      name={"tisQ8"}
+      key={"saQ8"}
+      id={"saQ8"}
+      name={"saQ8"}
       label={"How do you rate lab experiments, if applicable?"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retisQuiredValidator}
+      // validator={resaQuiredValidator}
     />
     <Field
-      key={"tisQ9"}
-      id={"tisQ9"}
-      name={"tisQ9"}
+      key={"saQ9"}
+      id={"saQ9"}
+      name={"saQ9"}
       label={"Any remarks"}
       layout={"horizontal"}
       component={FormTextArea}
       data={rating}
       // validator={requiredValidator}
     />
-    
+
     {/* <Field
       key={"userName"}
       id={"userName"}

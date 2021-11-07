@@ -5,9 +5,9 @@ import {
   FormAutoComplete,
   FormRadioGroup,
   FormTextArea,
-} from "./FormComponents";
-import { nameValidator, requiredValidator } from "./Validators";
-import { countries, genders } from "./Data";
+} from "../Helpers/FormComponents";
+import { nameValidator, requiredValidator } from "../Helpers/Validators";
+import { countries, genders } from "../Helpers/Data";
 export const Details = (
   <div>
     <Field

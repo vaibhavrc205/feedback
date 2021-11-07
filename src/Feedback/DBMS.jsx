@@ -1,109 +1,118 @@
 import * as React from "react";
 import { Field } from "@progress/kendo-react-form";
-import { countries, genders, rating, yesNo } from "./Data";
-import { FormInput, FormUpload, FormRadioGroup, FormTextArea } from "./FormComponents";
+import { countries, genders, rating, yesNo } from "../Helpers/Data";
+import {
+  FormInput,
+  FormUpload,
+  FormRadioGroup,
+  FormTextArea,
+} from "../Helpers/FormComponents";
 import {
   userNameValidator,
   emailValidator,
   passwordValidator,
   requiredValidator,
-} from "./Validators";
-export const TOC = (
+} from "../Helpers/Validators";
+export const DBMS = (
   <div>
     <Field
-      key={"tocQ1"}
-      id={"tocQ1"}
-      name={"tocQ1"}
-      label={"Has the Teacher covered entire Syllabus as prescribed by University?"}
+      key={"dbmsQ1"}
+      id={"dbmsQ1"}
+      name={"dbmsQ1"}
+      label={
+        "Has the Teacher covered entire Syllabus as prescribed by University?"
+      }
       layout={"horizontal"}
       component={FormRadioGroup}
       data={yesNo}
-      // validator={retocQuiredValidator}
+      // validator={redbmsQuiredValidator}
     />
     <div style={{ fontWeight: "bold" }}>
       Effectiveness of Teacher in terms of:
     </div>
     <Field
-      key={"tocQ2"}
-      id={"tocQ2"}
-      name={"tocQ2"}
+      key={"dbmsQ2"}
+      id={"dbmsQ2"}
+      name={"dbmsQ2"}
       label={"Technical content"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retocQuiredValidator}
+      // validator={redbmsQuiredValidator}
     />
     <Field
-      key={"tocQ3"}
-      id={"tocQ3"}
-      name={"tocQ3"}
+      key={"dbmsQ3"}
+      id={"dbmsQ3"}
+      name={"dbmsQ3"}
       label={"Communication skills"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retocQuiredValidator}
+      // validator={redbmsQuiredValidator}
     />
     <Field
-      key={"tocQ4"}
-      id={"tocQ4"}
-      name={"tocQ4"}
-      label={"Availability beyond normal classes and co-operation to solve individual problems"}
+      key={"dbmsQ4"}
+      id={"dbmsQ4"}
+      name={"dbmsQ4"}
+      label={
+        "Availability beyond normal classes and co-operation to solve individual problems"
+      }
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retocQuiredValidator}
+      // validator={redbmsQuiredValidator}
     />
     <Field
-      key={"tocQ5"}
-      id={"tocQ5"}
-      name={"tocQ5"}
+      key={"dbmsQ5"}
+      id={"dbmsQ5"}
+      name={"dbmsQ5"}
       label={"Pace on which contents were covered"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retocQuiredValidator}
+      // validator={redbmsQuiredValidator}
     />
     <Field
-      key={"tocQ6"}
-      id={"tocQ6"}
-      name={"tocQ6"}
+      key={"dbmsQ6"}
+      id={"dbmsQ6"}
+      name={"dbmsQ6"}
       label={"Overall effectiveness"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retocQuiredValidator}
+      // validator={redbmsQuiredValidator}
     />
     <Field
-      key={"tocQ7"}
-      id={"tocQ7"}
-      name={"tocQ7"}
+      key={"dbmsQ7"}
+      id={"dbmsQ7"}
+      name={"dbmsQ7"}
       label={"How do you rate the contents of the curricular?"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retocQuiredValidator}
+      // validator={redbmsQuiredValidator}
     />
     <Field
-      key={"tocQ8"}
-      id={"tocQ8"}
-      name={"tocQ8"}
+      key={"dbmsQ8"}
+      id={"dbmsQ8"}
+      name={"dbmsQ8"}
       label={"How do you rate lab experiments, if applicable?"}
       layout={"horizontal"}
       component={FormRadioGroup}
       data={rating}
-      // validator={retocQuiredValidator}
+      // validator={redbmsQuiredValidator}
     />
     <Field
-      key={"tocQ9"}
-      id={"tocQ9"}
-      name={"tocQ9"}
+      key={"dbmsQ9"}
+      id={"dbmsQ9"}
+      name={"dbmsQ9"}
       label={"Any remarks"}
       layout={"horizontal"}
       component={FormTextArea}
       data={rating}
       // validator={requiredValidator}
     />
-    
+
     {/* <Field
       key={"userName"}
       id={"userName"}

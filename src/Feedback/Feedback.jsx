@@ -9,9 +9,8 @@ import { CN } from "./CN";
 import { TOC } from "./TOC";
 import { SA } from "./SA";
 import { TIS } from "./TIS";
-import Navbar from "./Navbar";
 const stepPages = [Details, DBMS, CN, TOC, SA, TIS];
-export const App = () => {
+export const Feedback = () => {
   const [step, setStep] = React.useState(0);
   const [formState, setFormState] = React.useState({});
   const [steps, setSteps] = React.useState([
@@ -79,7 +78,6 @@ export const App = () => {
         justifyContent: "center",
       }}
     >
-      <Navbar />
       <div style={{ height: 50 }}></div>
       <Stepper value={step} items={steps} />
       <Form
@@ -93,7 +91,7 @@ export const App = () => {
           >
             <FormElement
               style={{
-                width: 800,
+                width: step == 0 ? 400 : 800,
               }}
             >
               {stepPages[step]}
@@ -145,4 +143,4 @@ export const App = () => {
   );
 };
 
-export default App;
+export default Feedback;
