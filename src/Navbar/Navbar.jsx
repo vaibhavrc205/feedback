@@ -36,6 +36,7 @@ const Navbar = () => {
           }}
         />
 
+
         <AppBarSection className="appbar-items">
           <ul className="appbar">
             {/* <li><span>ADMIN</span></li> */}
@@ -49,8 +50,14 @@ const Navbar = () => {
                 <span>FEEDBACK</span>
               </li>
             </Link>
+            <Link to="/admin">
+              <li>
+                <span>Admin</span>
+              </li>
+            </Link>
           </ul>
         </AppBarSection>
+
 
         <AppBarSpacer />
 

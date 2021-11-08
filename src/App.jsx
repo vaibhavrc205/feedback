@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 import Feedback from "./Feedback/Feedback";
 import Home from "./Home";
+import Admin from "./Admin/Admin";
 import Registration from "./Registration/Registration";
 import Footer from "./Footer/Footer";
 import Login from "./Login/Login";
@@ -21,6 +22,9 @@ function App() {
           <Route path="/signup">
             <SignUp />
           </Route>
+          <Route path="/admin">
+            <Admin />
+            </Route>
           <Route path="/feedback">
             <Feedback />
           </Route>
